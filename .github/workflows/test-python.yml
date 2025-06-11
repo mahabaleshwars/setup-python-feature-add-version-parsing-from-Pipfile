@@ -308,8 +308,8 @@ jobs:
       - name: build-version-file ${{ matrix.python }}
         run: |
           echo '[requires]
-           python_version = "${{ matrix.python }}"
-          ' > Pipfile
+          python_version = "${{ matrix.python }}"
+          ' > Pipenv
 
       - name: setup-python ${{ matrix.python }}
         id: setup-python
@@ -358,8 +358,8 @@ jobs:
       - name: build-version-file ${{ matrix.python }}
         run: |
           echo '[requires]
-           python_full_version = "${{ matrix.python }}"
-          ' > Pipfile
+          python_full_version = "${{ matrix.python }}"
+          ' > Pipenv
 
       - name: setup-python ${{ matrix.python }}
         id: setup-python
