@@ -308,7 +308,7 @@ jobs:
       - name: build-version-file ${{ matrix.python }}
         run: |
           echo '[requires]
-          python_version = "${{ matrix.python }}"
+           python_version = "${{ matrix.python }}"
           ' > Pipfile
 
       - name: setup-python ${{ matrix.python }}
@@ -358,7 +358,7 @@ jobs:
       - name: build-version-file ${{ matrix.python }}
         run: |
           echo '[requires]
-          python_full_version = "${{ matrix.python }}"
+           python_full_version = "${{ matrix.python }}"
           ' > Pipfile
 
       - name: setup-python ${{ matrix.python }}
